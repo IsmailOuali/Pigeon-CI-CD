@@ -4,14 +4,13 @@ import lombok.RequiredArgsConstructor;
 import net.yc.race.track.model.*;
 import net.yc.race.track.repository.*;
 import net.yc.race.track.serviceInf.SeasonServiceInf;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.*;
 import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
-public class SeasonService implements SeasonServiceInf {
+public class SeasonServiceImpl implements SeasonServiceInf {
 
 
     private final ResultRepository resultRepository;

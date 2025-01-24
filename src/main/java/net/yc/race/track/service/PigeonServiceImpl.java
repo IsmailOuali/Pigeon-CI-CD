@@ -5,19 +5,15 @@ import net.yc.race.track.model.Pigeon;
 import net.yc.race.track.model.User;
 import net.yc.race.track.repository.PigeonRepository;
 import net.yc.race.track.repository.UserRepository;
-import net.yc.race.track.serviceInf.PdfExportServiceInf;
 import net.yc.race.track.serviceInf.PigeonServiceInf;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.List;
 import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
-public class PigeonService implements PigeonServiceInf {
+public class PigeonServiceImpl implements PigeonServiceInf {
 
 
     private final PigeonRepository pigeonRepository;

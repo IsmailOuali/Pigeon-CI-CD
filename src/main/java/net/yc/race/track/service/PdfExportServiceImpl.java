@@ -12,7 +12,7 @@ import java.util.List;
 
 @Service
 
-public class PdfExportService implements PdfExportServiceInf {
+public class PdfExportServiceImpl implements PdfExportServiceInf {
 
     public void exportResultsToPdf(List<Result> results, String outputPath) throws DocumentException, IOException {
         // Création du document PDF

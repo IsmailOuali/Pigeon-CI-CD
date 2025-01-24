@@ -2,14 +2,11 @@ package net.yc.race.track.controller;
 
 import lombok.RequiredArgsConstructor;
 import net.yc.race.track.model.Result;
-import net.yc.race.track.service.ResultService;
 import net.yc.race.track.serviceInf.ResultServiceInf;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
 
 @RequiredArgsConstructor
 @RestController

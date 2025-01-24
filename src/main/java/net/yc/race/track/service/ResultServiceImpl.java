@@ -11,18 +11,16 @@ import net.yc.race.track.repository.CompetitionRepository;
 import net.yc.race.track.repository.ResultRepository;
 import net.yc.race.track.repository.UserRepository;
 import net.yc.race.track.serviceInf.ResultServiceInf;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import java.time.Duration;
 import java.util.Date;
 import java.util.List;
-import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
-public class ResultService implements ResultServiceInf {
+public class ResultServiceImpl implements ResultServiceInf {
 
 
     private final ResultRepository resultRepository;
@@ -35,7 +33,7 @@ public class ResultService implements ResultServiceInf {
     private final UserRepository userRepository;
 
 
-    private final PdfExportService pdfExportService;
+    private final PdfExportServiceImpl pdfExportServiceImpl;
  
 
 
@@ -191,7 +189,7 @@ public class ResultService implements ResultServiceInf {
 
         try {
             // Call the PDF export service to generate the PDF
-            pdfExportService.exportResultsToPdf(filteredResults, outputPath);
+            pdfExportServiceImpl.exportResultsToPdf(filteredResults, outputPath);
             return "Résultats exportés avec succès vers " + outputPath;
         } catch (Exception e) {
             return "Erreur lors de l'exportation des résultats : " + e.getMessage();

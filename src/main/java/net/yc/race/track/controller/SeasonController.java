@@ -3,9 +3,7 @@ package net.yc.race.track.controller;
 import lombok.RequiredArgsConstructor;
 import net.yc.race.track.Enum.Status;
 import net.yc.race.track.model.Season;
-import net.yc.race.track.service.SeasonService;
 import net.yc.race.track.serviceInf.SeasonServiceInf;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

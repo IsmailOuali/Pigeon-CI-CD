@@ -4,9 +4,8 @@ import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import net.yc.race.track.DTO.RequestDTO.UserRequest;
 import net.yc.race.track.DTO.ResponseDTO.JwtResponse;
-import net.yc.race.track.DTO.ResponseDTO.UserResponse;
 import net.yc.race.track.mapper.UserMapper;
-import net.yc.race.track.service.UserService;
+import net.yc.race.track.service.UserServiceImpl;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -18,8 +17,6 @@ import org.springframework.web.bind.annotation.*;
 
 import java.time.Duration;
 import java.time.Instant;
-import java.util.HashMap;
-import java.util.Map;
 import java.util.stream.Collectors;
 
 @RequiredArgsConstructor
@@ -28,13 +25,13 @@ import java.util.stream.Collectors;
 public class AuthController {
 
     private final UserMapper userMapper;
-    private final UserService userService;
+    private final UserServiceImpl userServiceImpl;
     private final AuthenticationManager authenticationManager;
     private final JwtEncoder jwtEncoder; // Inject JwtEncoder
 
     @PostMapping("/register")
     public ResponseEntity<String> register(@Valid @RequestBody UserRequest userRequest) {
-        userService.registerUser(userRequest);
+        userServiceImpl.registerUser(userRequest);
         return ResponseEntity.ok("User registered successfully");
     }
 

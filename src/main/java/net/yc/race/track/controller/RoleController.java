@@ -1,20 +1,10 @@
 package net.yc.race.track.controller;
 
-import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import net.yc.race.track.Enum.RoleEnum;
-import net.yc.race.track.Enum.Status;
-import net.yc.race.track.model.Season;
-import net.yc.race.track.service.SeasonService;
-import net.yc.race.track.serviceInf.SeasonServiceInf;
 import net.yc.race.track.serviceInf.UserServiceInf;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
 
 @RequiredArgsConstructor
 @RestController

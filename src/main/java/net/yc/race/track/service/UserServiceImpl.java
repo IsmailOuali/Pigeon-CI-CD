@@ -16,7 +16,7 @@ import java.util.Optional;
 
 @RequiredArgsConstructor
 @Service
-public class UserService implements UserServiceInf {
+public class UserServiceImpl implements UserServiceInf {
     private final UserMapper userMapper;
     private final PasswordEncoder passwordEncoder;
     private final UserRepository userRepository;
