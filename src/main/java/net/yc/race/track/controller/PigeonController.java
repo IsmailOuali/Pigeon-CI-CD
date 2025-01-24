@@ -2,7 +2,7 @@ package net.yc.race.track.controller;
 
 import lombok.RequiredArgsConstructor;
 import net.yc.race.track.model.Pigeon;
-import net.yc.race.track.serviceInf.PigeonServiceInf;
+import net.yc.race.track.service.PigeonServiceInf;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

@@ -1,17 +1,12 @@
-package net.yc.race.track.serviceInf;
+package net.yc.race.track.service;
 
-import lombok.RequiredArgsConstructor;
 import net.yc.race.track.model.Pigeon;
-import net.yc.race.track.model.User;
-import net.yc.race.track.repository.PigeonRepository;
-import net.yc.race.track.repository.UserRepository;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
 
-public interface PigeonServiceInf {
+public interface PigeonService {
 
      String savePigeon(Pigeon pigeon, Long userId);
      Optional<Pigeon> findPigeonById(Long pigeonId);

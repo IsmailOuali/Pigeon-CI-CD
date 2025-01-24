@@ -1,4 +1,4 @@
-package net.yc.race.track.serviceInf;
+package net.yc.race.track.service;
 
 import net.yc.race.track.DTO.RequestDTO.UserRequest;
 import net.yc.race.track.DTO.ResponseDTO.UserResponse;
@@ -8,7 +8,7 @@ import net.yc.race.track.model.User;
 import java.util.Optional;
 
 
-public interface UserServiceInf {
+public interface UserService {
 
      void changeRole(Long userId, RoleEnum role);
      UserResponse registerUser(UserRequest userRequest);

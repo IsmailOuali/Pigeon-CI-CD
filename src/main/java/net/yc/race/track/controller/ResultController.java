@@ -2,7 +2,7 @@ package net.yc.race.track.controller;
 
 import lombok.RequiredArgsConstructor;
 import net.yc.race.track.model.Result;
-import net.yc.race.track.serviceInf.ResultServiceInf;
+import net.yc.race.track.service.ResultServiceInf;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

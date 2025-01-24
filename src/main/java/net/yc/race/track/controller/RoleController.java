@@ -2,7 +2,7 @@ package net.yc.race.track.controller;
 
 import lombok.RequiredArgsConstructor;
 import net.yc.race.track.Enum.RoleEnum;
-import net.yc.race.track.serviceInf.UserServiceInf;
+import net.yc.race.track.service.UserServiceInf;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

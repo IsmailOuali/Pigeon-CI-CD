@@ -1,4 +1,4 @@
-package net.yc.race.track.service;
+package net.yc.race.track.service.Implemantation;
 
 import lombok.RequiredArgsConstructor;
 import net.yc.race.track.DTO.RequestDTO.UserRequest;
@@ -8,7 +8,7 @@ import net.yc.race.track.exceptions.UsernameAlreadyExistsException;
 import net.yc.race.track.mapper.UserMapper;
 import net.yc.race.track.model.User;
 import net.yc.race.track.repository.UserRepository;
-import net.yc.race.track.serviceInf.UserServiceInf;
+import net.yc.race.track.service.UserServiceInf;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 

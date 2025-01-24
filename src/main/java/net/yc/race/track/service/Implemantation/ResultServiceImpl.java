@@ -1,4 +1,4 @@
-package net.yc.race.track.service;
+package net.yc.race.track.service.Implemantation;
 
 import java.time.Instant;
 import java.time.temporal.ChronoUnit;
@@ -10,7 +10,7 @@ import net.yc.race.track.model.User;
 import net.yc.race.track.repository.CompetitionRepository;
 import net.yc.race.track.repository.ResultRepository;
 import net.yc.race.track.repository.UserRepository;
-import net.yc.race.track.serviceInf.ResultServiceInf;
+import net.yc.race.track.service.ResultServiceInf;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
