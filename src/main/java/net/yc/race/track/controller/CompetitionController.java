@@ -3,11 +3,8 @@ package net.yc.race.track.controller;
 import lombok.RequiredArgsConstructor;
 import net.yc.race.track.model.Competition;
 import net.yc.race.track.model.Pigeon;
-import net.yc.race.track.service.CompetitionService;
-import net.yc.race.track.service.PigeonService;
 import net.yc.race.track.serviceInf.CompetitionServiceInf;
 import net.yc.race.track.serviceInf.PigeonServiceInf;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

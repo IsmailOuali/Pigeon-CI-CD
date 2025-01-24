@@ -11,7 +11,6 @@ import net.yc.race.track.repository.PigeonRepository;
 import net.yc.race.track.repository.SeasonRepository;
 import net.yc.race.track.repository.UserRepository;
 import net.yc.race.track.serviceInf.CompetitionServiceInf;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Date;
@@ -20,7 +19,7 @@ import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
-public class CompetitionService implements CompetitionServiceInf {
+public class CompetitionServiceImpl implements CompetitionServiceInf {
 
     private final PigeonRepository pigeonRepository;
 
